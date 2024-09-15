@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wesley Oliveira - Desenvolvedor Frontend</title>
+
+  <link rel="stylesheet" href="src/css/font-awesome.css" />
+  <link rel="stylesheet" href="src/css/reset.css" />
+
+  <!-- Global -->
+  <link rel="stylesheet" href="src/css/globais.css" />
+  <link rel="stylesheet" href="src/css/variaveis.css" />
+  <link rel="stylesheet" href="src/css/secoes/header.css" />
+  <link rel="stylesheet" href="src/css/secoes/home.css" />
+  <link rel="stylesheet" href="src/css/secoes/sobre.css" />
+  <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
+  <link rel="stylesheet" href="src/css/secoes/projetos.css" />
+  <link rel="stylesheet" href="src/css/secoes/footer.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between alinhar-itens-no-centro">
+        <a href="https://www.linkedin.com/in/wesley-oliveira-santos" target="_blank">
+          <h1 class="logo">W</h1>
+        </a>
+        <nav>
+          <input id="menu-hamburguer" type="checkbox" />
+
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+          <ul>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Meus projetos</a></li>
+            <li><a href="#footer">Entre em contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container">
+      <div class="full-screen alinhar-itens-no-centro">
+        <div class="texto-home">
+          <p>Olá 👻,</p>
+          <h1>Sou o Wesley Oliveira</h1>
+          <div class="texto-dinamico">
+            <h2><span></span></h2>
+          </div>
+
+          <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/wesley-oliveira-santos" target="_blank" class="outer-shadow"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://contate.me/wesley-0" target="_blank" class="outer-shadow"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/wesleysword" target="_blank" class="outer-shadow"><i
+                class="fab fa-github"></i></a>
+            <a href="https://discordapp.com/users/475083696685187073" target="_blank" class="outer-shadow"><i
+                class="fab fa-discord"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="sobre-mim section" id="sobre-mim">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Sobre mim</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="imagem-sobre-mim">
+          <div class="img-box inner-shadow">
+            <img src="src/imagens/imagem-perfil.png" alt="foto sobre mim" class="outer-shadow" />
+          </div>
+        </div>
+        <div class="informacoes-sobre-mim">
+          <p>
+            <strong>Olá! Me chamo Wesley Oliveira e sou um desenvolvedor fullstack em
+              formação!</strong>
+            Gosto MUITO da área de tecnologia, e tenho certeza que posso contribuir em qualquer time com as minhas
+            habilidades.
+          </p>
+
+          <p>
+            Sou apaixonado por desafios e aprendizado contínuo. Procuro ativamente participar de comunidades de
+            programação, tanto buscando feedback para meus projetos quanto compartilhando meu conhecimento com outros
+            desenvolvedores.
+          </p>
+
+          <p>
+            Minhas paixões são jogos, animes, viagens e idiomas. Amo a sensação de descobrir novas histórias, mundos e
+            culturas através dessas experiências. 🎮🛫
+          </p>
+
+          <div class="botoes">
+            <a target="_blank" href="./src/arquivos/Wesley-Oliveira-CV.pdf" class="botao outer-shadow">Veja meu CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades section" id="habilidades">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Habilidades</h2>
+        </div>
+      </div>
+
+      <div class="container-habilidades">
+        <div class="informacoes javascript rgb">
+          <div class="logo">
+            <i class="devicon devicon-javascript-plain" id="javascript"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Com o JavaScript, é possível adicionar funcionalidades como animações, validação de formulários,
+            manipulação de conteúdo e muito mais, tornando as páginas web mais interessantes e úteis para os usuários.
+          </p>
+        </div>
+
+        <div class="informacoes html">
+          <div class="logo">
+            <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>O HTML é utilizado para definir a estrutura e o conteúdo de uma página, utilizando tags para marcar
+            diferentes elementos como
+            cabeçalhos, parágrafos, imagens, links, etc.</p>
+        </div>
+
+        <div class="informacoes css">
+          <div class="logo">
+            <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Utilizada para definir a aparência visual de páginas da web. Com o CSS, é possível criar designs mais
+            sofisticados e interativos, utilizando recursos como animações, transições suaves, fontes personalizadas e
+            layouts flexíveis.
+
+
+          </p>
+        </div>
+
+        <div class="informacoes github">
+          <div class="logo">
+            <i class="devicon devicon-github-original" id="github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>Utiliza o sistema de controle de versão Git para rastrear as mudanças feitas no código ao longo do tempo. O
+            GitHub permite que desenvolvedores colaborem em projetos, revisarem código, gerenciem tarefas e criem
+            comunidades em torno de seus projetos</p>
+        </div>
+
+        <div class="informacoes git">
+          <div class="logo">
+            <i class="devicon devicon-git-plain" id="git"></i>
+          </div>
+          <h3>Git</h3>
+          <p>Permite que acompanhe as mudanças feitas em arquivos ao longo do tempo, criando um histórico completo das
+            alterações. Com o Git, é possível facilmente voltar a versões anteriores do projeto, colaborar com outras
+            pessoas e gerenciar diferentes versões do código.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos section" id="projetos">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Meus projetos</h2>
+        </div>
+      </div>
+      <div class="container-projetos">
+        <div class="projeto">
+          <img class="imagem ativa" src="./src/imagens/Projeto-Huddle.png" alt="Projeto Huddle">
+          <a href="https://github.com/wesleysword/huddle-landing-page" target="_blank">
+            <h3>Landing Page Huddle</h3>
+            <div class="informacoes-projeto">
+              <p>Desafio de Projeto do site Frontend Mentor, onde faço uma Landing Page interativa e responsiva usando
+                apenas HTML, CSS.</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <img class="imagem" src="./src/imagens/Projeto-x-devs.png" alt="Projeto X-DEVS">
+          <a href="https://github.com/wesleysword/projeto-x-dev" target="_blank">
+            <h3>X-DEVS</h3>
+            <div class="informacoes-projeto">
+              <p>Este projeto foi desenvolvido utilizando as tecnologias fundamentais da web: HTML, CSS e JavaScript. O
+                objetivo principal do projeto foi aprender as aplicações básicas dessas tecnologias, que foi aplicado no
+                evento "Semana do zero ao programador contratado".</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <img class="imagem" src="./src/imagens/Projeto-house-dragons.png" alt="Projeto House of the Dragons">
+          <a href="https://github.com/wesleysword/projeto-house-of-dragons" target="_blank">
+            <h3>House of the Dragons</h3>
+            <div class="informacoes-projeto">
+              <p>Este projeto foi desenvolvido utilizando as tecnologias fundamentais da web: HTML, CSS e JavaScript. O
+                objetivo principal do projeto foi aprender as aplicações básicas dessas tecnologias, que foi aplicado no
+                evento "Semana do zero ao programador contratado".</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <img class="imagem" src="./src/imagens/Projeto-NFT-card.png" alt="Projeto NFT Card">
+          <a href="https://github.com/wesleysword/NFT-CARD" target="_blank">
+            <h3>Projeto NFT Card</h3>
+            <div class="informacoes-projeto">
+              <p>Desafio de Projeto do site Frontend Mentor, onde faço um cartão NFT interativo usando apenas HTML, CSS.
+              </p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <img class="imagem" src="./src/imagens/Projeto-Landing-Page-Aula.png" alt="Projeto Landing Page da Aula">
+          <a href="https://github.com/wesleysword/aula-landing-page" target="_blank">
+            <h3>Landing Page Agência XYZ</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto de uma landing page interativa e responsiva usando apenas HTML, CSS, que aprendi em aula.</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+
+
+        <div class="projeto">
+          <img class="imagem" src="./src/imagens/em-andamento.jpg" alt="Projeto em andamento">
+          <a href="https://github.com/wesleysword/" target="_blank">
+            <h3>Projeto EM ANDAMENTO</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto EM ANDAMENTO.</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="button-top">
+        <button class="scrollTop" onclick="backTop();">
+          <img src="./src/imagens/arrow-top.png" alt="botão para subir para o topo da página">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <h2>Me envie uma mensagem!</h2>
+      <div class="redes-sociais">
+        <a class="redes-sociais">
+          <a href="https://www.linkedin.com/in/wesley-oliveira-santos" target="_blank" class="outer-shadow"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://contate.me/wesley-0" target="_blank" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://github.com/wesleysword" target="_blank" class="outer-shadow"><i
+              class="fab fa-github"></i></a>
+          <a href="https://discordapp.com/users/475083696685187073" target="_blank" class="outer-shadow"><i
+              class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./src/js/app.js">
+  </script>
+</body>
+
+</html>

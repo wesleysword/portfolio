@@ -1,0 +1,91 @@
+.habilidades .container-habilidades {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.habilidades .container-habilidades .informacoes {
+    max-width: 350px;
+    padding: 40px 20px;
+}
+
+.habilidades .container-habilidades .informacoes p,
+.habilidades .container-habilidades .informacoes h3,
+.habilidades .container-habilidades .informacoes .logo i {
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.habilidades .container-habilidades .informacoes:hover p,
+.habilidades .container-habilidades .informacoes:hover h3,
+.habilidades .container-habilidades .informacoes:hover .logo i {
+    color: var(--cor-primaria);
+}
+
+
+.habilidades .container-habilidades .informacoes h3 {
+    font-size: var(--fonte-extra-grande);
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+.habilidades .container-habilidades .informacoes p {
+    font-size: 1.8rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.habilidades .container-habilidades .informacoes .logo i {
+    font-size: 8rem;
+}
+
+.habilidades .container-habilidades .informacoes {
+    position: relative;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+    background-color: #000;
+}
+
+.habilidades .container-habilidades .informacoes:hover::before,
+.habilidades .container-habilidades .informacoes:hover::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: nomeanimado 8s linear alternate infinite;
+}
+
+@keyframes nomeanimado {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+.habilidades .container-habilidades .informacoes::after {
+    filter: blur(50px);
+}
+
+.habilidades .section-title h2 {
+    font-size: 6rem;
+}

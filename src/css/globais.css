@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+
+html {
+  font-size: 62.5%;
+  color: var(--cor-branca);
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-fundo-escuro);
+  font-family: var(--fonte-primaria);
+  font-size: var(--fonte-normal);
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.alinhar-itens-no-centro {
+  display: flex;
+  align-items: center;
+}
+
+.redes-sociais a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--cor-branca);
+  margin: 0 4px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.redes-sociais a i {
+  line-height: 40px;
+}
+
+.home .redes-sociais .fab {
+  margin-left: 5px;
+}
+
+.redes-sociais .fab.fa-whatsapp:hover {
+  color: rgb(96, 192, 72);
+}
+
+.redes-sociais .fab.fa-linkedin-in:hover {
+  color: var(--cor-primaria);
+}
+
+.redes-sociais .fab.fa-github:hover {
+  color: rgb(255, 153, 0);
+}
+
+.redes-sociais .fab.fa-discord:hover {
+  color: rgb(182, 59, 230);
+}
+
+.outer-shadow {
+  box-shadow: 3px 3px #222327, -3px -3px 3px #454545;
+}
+
+.section {
+  padding: 7rem 0 7rem;
+}
+
+.section-title {
+  text-align: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 60px 0;
+}
+
+.section-title h2 {
+  font-size: var(--fonte-gigante);
+  font-weight: 500;
+  background: linear-gradient(to left, #f0e, #46bfcf, #d52fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  background-size: 300%;
+  border-radius: 8px;
+  animation: nome-animado 8s linear alternate infinite;
+}
+
+@keyframes nome-animado {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 300%;
+  }
+}
+
+.botao {
+  font-size: var(--fonte-grande);
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #f0e, #46bfcf, #d52fff, #46bfcf, #f0e, #46bfcf, #f0e, #d52fff);
+  background-size: 400% 100%;
+  animation: degrade-botao 7s linear infinite alternate-reverse;
+}
+
+@keyframes degrade-botao {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 400%;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: var(--cor-fundo-escuro);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-primaria);
+}
+
+
+/* Botão scroll top */
+.scrollTop {
+  outline: none;
+  border: 0;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+
+.scrollTop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollTop img {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 780px) {
+  .scrollTop {
+    width: 45px;
+    height: 45px;
+  }
+
+  .scrollTop img {
+   max-height: 35px;
+  }
+}

@@ -1,0 +1,20 @@
+/* FOOTER */
+.footer {
+    background: url(../../imagens/imagem-footer.jpg) center;
+    background-size: 1920px;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.footer .container {
+    padding: 5rem 0;
+}
+
+.footer h2 {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-normal);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}

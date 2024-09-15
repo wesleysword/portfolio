@@ -1,0 +1,135 @@
+.home {
+  background-image: url("../../imagens/angel.jpg");
+  max-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .full-screen {
+    padding: 50px 0;
+    min-height: 86vh;
+}
+
+.home .texto-home {
+    letter-spacing: 5px;
+}
+
+.home .alinhar-itens-no-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .texto-dinamico h2 {
+    color: #f0e;
+    border-right: 3px solid #f0e;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: cursor 25s steps(30) infinite;
+  }
+  
+  @keyframes cursor {
+    0%, 25%, 50%, 75%, 100% {
+      width: 0;
+    }
+    5%, 12.5%, 37.5%, 62.5%, 87%, 100% {
+      width: 400px;
+    }
+  
+    0%, 25% {
+      content: "Desenvolvedor Full-stack";
+    }
+    26%, 50% {
+      content: "Desenvolvedor BackEnd";
+    }
+    51%, 75% {
+      content: "Desenvolvedor FrontEnd";
+    }
+    75%, 100% {
+      content: "Desenvolvedor Full-stack";
+    }
+  }
+  
+  .home .texto-dinamico h2::before {
+    content: "";
+    animation: troca-texto 25s infinite;
+  }
+  
+  @keyframes troca-texto {
+    0%, 25% {
+      content: "Desenvolvedor Full-stack";
+    }
+    26%, 50% {
+      content: "Desenvolvedor Backend";
+    }
+    51%, 75% {
+      content: "Desenvolvedor Frontend";
+    }
+    76%, 100% {
+      content: "Desenvolvedor Full-stack";
+    }
+  }
+
+
+@media(max-width: 1280px) {
+    .home .texto-home {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 var(--mobile-padding);
+    }
+}
+
+.home .texto-home p {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
+    margin-bottom: 10px;
+}
+
+.home .texto-home h1 {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-gigante);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home .texto-home h2 {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 430px) {
+    .home .texto-dinamico {
+        text-wrap: nowrap;
+    }
+
+    .home .texto-dinamico h2 {
+        font-size: var(--fonte-normal);
+    }
+
+    @keyframes cursor {
+        0%, 25%, 50%, 75%, 100% {
+          width: 0;
+        }
+        5%, 12.5%, 37.5%, 62.5%, 87%, 100% {
+          width: 300px;
+        }
+      
+        0%, 25% {
+          content: "Desenvolvedor Full-stack";
+        }
+        26%, 50% {
+          content: "Desenvolvedor BackEnd";
+        }
+        51%, 75% {
+          content: "Desenvolvedor FrontEnd";
+        }
+        75%, 100% {
+          content: "Desenvolvedor Full-stack";
+        }
+      }
+}
