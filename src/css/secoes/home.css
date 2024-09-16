@@ -23,8 +23,8 @@
 }
 
 .home .texto-dinamico h2 {
-    color: #f0e;
-    border-right: 3px solid #f0e;
+    color: var(--cor-texto-dinamico);
+    border-right: 3px solid var(--cor-texto-dinamico);
     width: 0;
     white-space: nowrap;
     overflow: hidden;

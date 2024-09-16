@@ -55,20 +55,20 @@ body {
   margin-left: 5px;
 }
 
-.redes-sociais .fab.fa-whatsapp:hover {
-  color: rgb(96, 192, 72);
+.redes-sociais .fab.fa-linkedin-in:hover {
+  color: var(--cor-linkedin);
 }
 
-.redes-sociais .fab.fa-linkedin-in:hover {
-  color: var(--cor-primaria);
+.redes-sociais .fab.fa-whatsapp:hover {
+  color: var(--cor-whatsapp);
 }
 
 .redes-sociais .fab.fa-github:hover {
-  color: rgb(255, 153, 0);
+  color: var(--cor-github);
 }
 
 .redes-sociais .fab.fa-discord:hover {
-  color: rgb(182, 59, 230);
+  color: var(--cor-discord);
 }
 
 .outer-shadow {
@@ -142,7 +142,7 @@ body {
 .scrollTop {
   outline: none;
   border: 0;
-  background-color: #fff;
+  background-color: var(--cor-branca);
   width: 60px;
   height: 60px;
   padding: 8px;
